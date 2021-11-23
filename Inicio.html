@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐱‍👤🙂✔🎈</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class= "div" id="div">
+        <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <ol class="items" id="items">
+                <li ><a href="#header">HOME</a></li>
+                <li ><a href="#body">ABOUT</a></li>
+                <li ><a href="#body">MENU</a></li>
+                <li ><a href="#footer">WHERE</a></li>
+            </ol>
+        </nav>
+            <div class="cuerpo-contenedor" id="cuerpo-contenedor">
+                <div class="cuerpo-contenedor-titulo" id="cuerpo-contenedor-titulo">
+                    <div class="programador">
+                        <h1>
+                            PROGRAMACIÓN
+                        </h1>
+                    </div>
+                    <div class="web">
+                        <h1>
+                            WEB
+                        </h1>
+                    </div>
+                </div>
+                <img src="./imagen.jpg" alt="">
+            </div>
+
+        </header>
+
+        <div class="body" id="body">
+            <h1 class="tituloh1" id="tituloh1"><span class="titulo" id="titulo">TITULO</span></h1>
+            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, deleniti! Quis quasi quo error esse quibusdam commodi voluptatem porro officia sunt accusamus autem, dignissimos necessitatibus. Autem veritatis cum repellendus possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto dolor veritatis commodi, libero, ipsam aspernatur cumque, sit deleniti repudiandae explicabo expedita ab alias fugit molestiae non officia harum esse eos.</p>
+            <br>
+            <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus iste fugit! Iure nemo culpa incidunt, mollitia omnis doloremque sed cum? Incidunt ut perspiciatis corrupti soluta voluptatum ad vel necessitatibus?</p>
+            <div class="cita">
+                <blockquote>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ducimus ea ipsa voluptatum est commodi iusto necessitatibus ipsum et ad vitae magnam, voluptates exercitationem ipsam numquam corporis! Quo, sed natus.
+                    </p>
+                </blockquote>
+            </div>
+            <div class="seccion">
+                <div class="formularios">
+                    <form action="" class="formulario" onsubmit="validarFormulario(this)">
+                    <div class="nombre">
+                        <input type="text" placeholder="nombre" name="nombre">
+                    </div>
+
+                    <div class="apellido">
+                        <input type="text" placeholder="apellido" name="apellido">
+                    </div>
+
+                    <div class="comentario">
+                        <input type="text" placeholder="comentario" name="comentario">
+                    </div>
+                    <div class="button">
+                        <a href="https://es.wikipedia.org/wiki/Tim_Berners-Lee">
+                    <button class = "boton" type="submit">
+                        ENVIAR
+                    </button>
+                </a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer" id="footer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi minima repudiandae ea. Omnis rerum magni similique optio id. Corrupti odit dignissimos, officiis ratione officia cum sint temporibus optio ex!
+        </footer>
+    </div>
+</body>
+
+<script>
+
+    function validarFormulario (formulario){
+        validacionNombre = validarNombre (formulario.nombre.value)
+        validacionApellido = validarApellido (formulario.apellido.value)
+        validacionComentario = validarComentario (formulario.comentario.value)
+        
+        if (validacionNombre=="" && validacionApellido=="" && validacionComentario==""){
+            alert ("datos ingresados correctamente")
+            return true
+        }else {
+            alert(validacionNombre+validacionApellido+validacionComentario)
+            return falses
+        }
+    }
+
+    function validarNombre (nombre){
+        if(nombre==""){
+            return "no se ha ingresado el nombre, "
+        }else{
+            return ""
+        }
+    }
+    
+    function validarApellido (apellido){
+        if(apellido==""){
+            return "no se ha ingresado el apellido y "
+        }else{
+            return ""
+        }
+    }
+    
+    function validarComentario (comentario){
+        if(comentario==""){
+            return "no se ha ingresado el comentario"
+        }else{
+            return ""
+        }
+    }
+    
+
+</script>
+   
+</html>
